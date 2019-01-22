@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_skills" label="Skills" language="en" table="x_304295_skill_eva_imp_skill">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_skills</element>
+            <help/>
+            <hint/>
+            <label>Skills</label>
+            <language>en</language>
+            <name>x_304295_skill_eva_imp_skill</name>
+            <plural>Skills</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-01-22 03:54:59</sys_created_on>
+            <sys_id>98b4f817db432300136853184b961912</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Skills</sys_name>
+            <sys_package display_value="Skill Evaluation" source="x_304295_skill_eva">00cca09fdb032300136853184b96191f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Skill Evaluation">00cca09fdb032300136853184b96191f</sys_scope>
+            <sys_update_name>sys_documentation_x_304295_skill_eva_imp_skill_u_skills_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-01-22 03:54:59</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
