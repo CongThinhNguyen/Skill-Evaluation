@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-23 08:34:27</sys_created_on>
+        <sys_id>1cadbe2fdbc32300136853184b9619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.x_304295_skill_eva.admin</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_304295_skill_eva">00cca09fdb032300136853184b96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">00cca09fdb032300136853184b96191f</sys_scope>
+        <sys_ui_action display_value="Approve">e29df26fdbc32300136853184b9619b5</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_1cadbe2fdbc32300136853184b9619d0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-23 08:34:27</sys_updated_on>
+        <sys_user_role display_value="x_304295_skill_eva.admin" name="x_304295_skill_eva.admin">6efce89fdb032300136853184b96194a</sys_user_role>
+    </sys_ui_action_role>
+</record_update>
