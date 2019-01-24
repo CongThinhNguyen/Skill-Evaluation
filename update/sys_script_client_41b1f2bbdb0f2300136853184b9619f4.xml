@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>assigned_to</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>SetReadOnly</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	if(g_user.hasRole('x_304295_skill_eva.user')){
+		g_form.setReadOnly('assigned_to',true);		
+	}
+	if(g_user.hasRole('x_304295_skill_eva.admin')){
+		g_form.setReadOnly('assigned_to',false);		
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-24 02:20:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>41b1f2bbdb0f2300136853184b9619f4</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>SetReadOnly</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Skill Evaluation" source="x_304295_skill_eva">00cca09fdb032300136853184b96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">00cca09fdb032300136853184b96191f</sys_scope>
+        <sys_update_name>sys_script_client_41b1f2bbdb0f2300136853184b9619f4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-24 02:26:00</sys_updated_on>
+        <table>x_304295_skill_eva_submission</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
