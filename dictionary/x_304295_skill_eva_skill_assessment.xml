@@ -11,7 +11,7 @@
             </choice>
         </element>
         <element label="Skill" max_length="32" name="skill" reference="x_304295_skill_eva_skill" type="reference"/>
-        <element display="true" label="Submission" max_length="32" name="submission" reference="x_304295_skill_eva_submission" type="reference"/>
+        <element display="true" label="Submission" max_length="32" name="submission" reference="x_304295_skill_eva_submission" reference_cascade_rule="cascade" type="reference"/>
         <index name="index">
             <element name="skill"/>
         </index>

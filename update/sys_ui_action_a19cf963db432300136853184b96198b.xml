@@ -36,6 +36,15 @@
 		a += parseInt(s.proficiency_level);
 	}
 	current.score = a;
+	var score = new GlideRecord('x_304295_skill_eva_level');
+	score.orderByDesc('min_score');
+	score.query();
+	while(score.next()){
+		if(a >= score.min_score){
+			current.level = score.sys_id;
+			break;
+		}
+	}
 	current.update();
 })();]]></script>
         <show_insert>false</show_insert>
@@ -48,7 +57,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a19cf963db432300136853184b96198b</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>Submit for Review</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_304295_skill_eva">00cca09fdb032300136853184b96191f</sys_package>
@@ -56,7 +65,7 @@
         <sys_scope display_value="Skill Evaluation">00cca09fdb032300136853184b96191f</sys_scope>
         <sys_update_name>sys_ui_action_a19cf963db432300136853184b96198b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-23 04:08:15</sys_updated_on>
+        <sys_updated_on>2019-01-24 04:49:56</sys_updated_on>
         <table>x_304295_skill_eva_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
