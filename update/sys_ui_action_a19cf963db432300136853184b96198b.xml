@@ -26,7 +26,12 @@
         <name>Submit for Review</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[(function submit_cal(){
+        <script><![CDATA[/**
+ * This function will assign to State field is 'Submit for review'
+ * Calculate score and display level on the Level field
+ * @
+ */
+(function submit_calScore_displayLevel(){
 	current.state = 'submitted';
 	var s = new GlideRecord('x_304295_skill_eva_skill_assessment');
 	s.addQuery('submission.number',current.number);
@@ -57,7 +62,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a19cf963db432300136853184b96198b</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Submit for Review</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_304295_skill_eva">00cca09fdb032300136853184b96191f</sys_package>
@@ -65,7 +70,7 @@
         <sys_scope display_value="Skill Evaluation">00cca09fdb032300136853184b96191f</sys_scope>
         <sys_update_name>sys_ui_action_a19cf963db432300136853184b96198b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-24 04:49:56</sys_updated_on>
+        <sys_updated_on>2019-01-28 01:55:27</sys_updated_on>
         <table>x_304295_skill_eva_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

@@ -10,10 +10,11 @@
         <messages/>
         <name>Assigned to</name>
         <order/>
-        <script><![CDATA[function onLoad() {
-	//Type appropriate comment here, and begin script below
-	if (g_form.isNewRecord())
-		{
+        <script><![CDATA[/**
+ * This function set userID for 'Assigned to' field is current user
+ */
+function onLoad() {
+	if (g_form.isNewRecord()) {
 		g_form.setValue('assigned_to',g_user.userID);
 	}
 }
@@ -24,7 +25,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>45267c57db432300136853184b9619ed</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Assigned to</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_304295_skill_eva">00cca09fdb032300136853184b96191f</sys_package>
@@ -32,7 +33,7 @@
         <sys_scope display_value="Skill Evaluation">00cca09fdb032300136853184b96191f</sys_scope>
         <sys_update_name>sys_script_client_45267c57db432300136853184b9619ed</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-22 04:01:44</sys_updated_on>
+        <sys_updated_on>2019-01-27 13:57:47</sys_updated_on>
         <table>x_304295_skill_eva_submission</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>

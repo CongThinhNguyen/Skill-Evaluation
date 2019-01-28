@@ -26,7 +26,12 @@
         <name>Reject</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[current.state = 'draft';
+        <script><![CDATA[// current.state (String) assign information of state is 'Draft'
+current.state = 'draft';
+
+/**
+ * current.update() to Update information
+ */
 current.update();]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
@@ -38,7 +43,7 @@ current.update();]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8d7efe2fdbc32300136853184b961959</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Reject</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_304295_skill_eva">00cca09fdb032300136853184b96191f</sys_package>
@@ -46,7 +51,7 @@ current.update();]]></script>
         <sys_scope display_value="Skill Evaluation">00cca09fdb032300136853184b96191f</sys_scope>
         <sys_update_name>sys_ui_action_8d7efe2fdbc32300136853184b961959</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-24 04:27:10</sys_updated_on>
+        <sys_updated_on>2019-01-28 01:50:43</sys_updated_on>
         <table>x_304295_skill_eva_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
