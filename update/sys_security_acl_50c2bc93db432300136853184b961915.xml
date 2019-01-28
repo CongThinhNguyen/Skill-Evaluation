@@ -8,7 +8,8 @@
         <name>x_304295_skill_eva_cert_acquisition</name>
         <operation display_value="create">create</operation>
         <script><![CDATA[answer = true;
-if(current.submission.state == 'submitted'){
+if(current.submission.state == 'submitted' || current.submission.state == 'reviewed' ||
+  current.submission.state == 'completed'){
 	answer = false;
 }
 ]]></script>
@@ -16,14 +17,14 @@ if(current.submission.state == 'submitted'){
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-01-22 03:46:31</sys_created_on>
         <sys_id>50c2bc93db432300136853184b961915</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>x_304295_skill_eva_cert_acquisition</sys_name>
         <sys_package display_value="Skill Evaluation" source="x_304295_skill_eva">00cca09fdb032300136853184b96191f</sys_package>
         <sys_policy/>
         <sys_scope display_value="Skill Evaluation">00cca09fdb032300136853184b96191f</sys_scope>
         <sys_update_name>sys_security_acl_50c2bc93db432300136853184b961915</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-25 09:32:20</sys_updated_on>
+        <sys_updated_on>2019-01-28 07:50:27</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>
