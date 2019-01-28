@@ -22,6 +22,10 @@ function onLoad() {
 	if(g_user.hasRole('x_304295_skill_eva.admin')){
 		g_form.setReadOnly('assigned_to',false);		
 	}
+	// if is state != 'Draft' then Desciption field is read only 
+	if(g_form.getValue('state') != 'draft') {
+		g_form.setReadOnly('description',true);
+	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -29,7 +33,7 @@ function onLoad() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>41b1f2bbdb0f2300136853184b9619f4</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>SetReadOnly</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_304295_skill_eva">00cca09fdb032300136853184b96191f</sys_package>
@@ -37,7 +41,7 @@ function onLoad() {
         <sys_scope display_value="Skill Evaluation">00cca09fdb032300136853184b96191f</sys_scope>
         <sys_update_name>sys_script_client_41b1f2bbdb0f2300136853184b9619f4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-27 13:52:38</sys_updated_on>
+        <sys_updated_on>2019-01-28 03:43:05</sys_updated_on>
         <table>x_304295_skill_eva_submission</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>
