@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_304295_skill_eva_submission</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p>Click here to Approve : ${<a href="mailto:mailto.approval}">mailto:mailto.approval}</a></p>
+<p>Click here to Reject:&nbsp;${<a href="mailto:mailto.approval}">mailto:mailto.rejection}</a></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Approve/Reject</name>
+        <sms_alternate/>
+        <subject/>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-01-30 03:08:10</sys_created_on>
+        <sys_id>a526b9bddb132300136853184b96196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approve/Reject</sys_name>
+        <sys_package display_value="Skill Evaluation" source="x_304295_skill_eva">00cca09fdb032300136853184b96191f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Skill Evaluation">00cca09fdb032300136853184b96191f</sys_scope>
+        <sys_update_name>sysevent_email_template_a526b9bddb132300136853184b96196b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-30 03:08:10</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>
