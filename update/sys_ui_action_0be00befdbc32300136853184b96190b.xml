@@ -26,17 +26,33 @@
         <name>Approve</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[// current.state (String) assign information of state is 'Completed'
-current.state = 'completed';
-
-// current.valid (boolean) information of valid is uncheck
-current.valid = false;
-
-/**
- * current.update() to Update information
+        <script><![CDATA[/**
+ * This function to find user with similar record
+ * Set valid field to false
+ * update state field to 'Completed'
  */
-current.update();
-]]></script>
+(function onSubmit(){
+		var count = new GlideAggregate('x_304295_skill_eva_submission');
+		count.addAggregate('COUNT');
+		count.query();
+		var record = 0;
+		if(count.next()) {
+				record = count.getAggregate('COUNT');
+			}
+			var check = new GlideRecord('x_304295_skill_eva_submission');
+			check.addQuery('assigned_to',current.assigned_to);
+			check.addQuery('state','=','completed');
+			check.addQuery('valid','=','true');
+			check.query();
+			if( check.next()){
+					current.state = 'completed';
+					check.setValue('valid',record);
+					check.updateMultiple();
+				} else {
+						current.state = 'completed';
+					}
+					current.update();
+				})();				]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -47,7 +63,7 @@ current.update();
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0be00befdbc32300136853184b96190b</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Approve</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_304295_skill_eva">00cca09fdb032300136853184b96191f</sys_package>
@@ -55,7 +71,7 @@ current.update();
         <sys_scope display_value="Skill Evaluation">00cca09fdb032300136853184b96191f</sys_scope>
         <sys_update_name>sys_ui_action_0be00befdbc32300136853184b96190b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-28 01:48:56</sys_updated_on>
+        <sys_updated_on>2019-02-11 06:18:12</sys_updated_on>
         <table>x_304295_skill_eva_submission</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
