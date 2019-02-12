@@ -48,7 +48,7 @@
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>assigned_to,assigned_to.user_name</recipient_fields>
+        <recipient_fields>assigned_to</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
@@ -63,7 +63,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c5fddc19db976300136853184b961907</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Email For Assigned To</sys_name>
         <sys_overrides/>
         <sys_package display_value="Skill Evaluation" source="x_304295_skill_eva">00cca09fdb032300136853184b96191f</sys_package>
@@ -71,7 +71,7 @@
         <sys_scope display_value="Skill Evaluation">00cca09fdb032300136853184b96191f</sys_scope>
         <sys_update_name>sysevent_email_action_c5fddc19db976300136853184b961907</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-01-30 02:48:50</sys_updated_on>
+        <sys_updated_on>2019-02-12 03:56:37</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
